@@ -15,7 +15,7 @@ CELERY_TASK_SERIALIZER = "json"
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4#0p@v&gddd)bx!a0ljwhwlnzg4xo&kmi!lx*sup2bl(ra7ps+'
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
